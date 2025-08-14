@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8042124D2E4DF524004BA50C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8042124C2E4DF524004BA50C /* FirebaseAnalytics */; };
+		8042124F2E4DF524004BA50C /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8042124E2E4DF524004BA50C /* FirebaseAnalyticsCore */; };
+		804212512E4DF524004BA50C /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 804212502E4DF524004BA50C /* FirebaseCore */; };
+		804212532E4DF524004BA50C /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 804212522E4DF524004BA50C /* FirebaseCrashlytics */; };
+		804213782E4DF803004BA50C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 804213772E4DF803004BA50C /* ComposableArchitecture */; };
+		809FC0DF2E4DFA1100C29952 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 809FC0DE2E4DFA1100C29952 /* GoogleMobileAds */; };
+		809FC0E42E4DFA9E00C29952 /* ApphudSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 809FC0E32E4DFA9E00C29952 /* ApphudSDK */; };
+		809FC0E72E4DFAAF00C29952 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 809FC0E62E4DFAAF00C29952 /* AppsFlyerLib */; };
+		9E5220572DC108E6000D8298 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E5220562DC108E6000D8298 /* alarm.mp3 */; };
+		9E9E5B032DAB9A1B005A7595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E5B022DAB9A17005A7595 /* AppDelegate.swift */; };
+		9ED13F802DA02FEE00996699 /* MagicSecurityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED13F7D2DA02FEE00996699 /* MagicSecurityApp.swift */; };
+		9EE193272DB0069500EAE9AE /* MagicSecurityContentBlocker.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9EE1931E2DB0069500EAE9AE /* MagicSecurityContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9EEB11552DE9856E0098036B /* Subscriptions.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 9EEB11542DE9856E0098036B /* Subscriptions.storekit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EE193252DB0069500EAE9AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EB304762DA0242E00F2431E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EE1931D2DB0069500EAE9AE;
+			remoteInfo = MagicSecurityContentBlocker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E65CB7A2DBA85F400675F01 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE193282DB0069500EAE9AE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9EE193272DB0069500EAE9AE /* MagicSecurityContentBlocker.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		809FC32E2E4E063700C29952 /* MagicSecurity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MagicSecurity.entitlements; sourceTree = "<group>"; };
+		809FC4512E4E07E900C29952 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		9E5220562DC108E6000D8298 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		9E9E5B022DAB9A17005A7595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EB3047E2DA0242E00F2431E /* MagicSecurity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicSecurity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED13F7D2DA02FEE00996699 /* MagicSecurityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSecurityApp.swift; sourceTree = "<group>"; };
+		9EE1931E2DB0069500EAE9AE /* MagicSecurityContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MagicSecurityContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEB11542DE9856E0098036B /* Subscriptions.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; name = Subscriptions.storekit; path = App/Subscriptions.storekit; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8042136E2E4DF712004BA50C /* Exceptions for "Sources" folder in "MagicSecurity" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/alarm.mp3,
+			);
+			target = 9EB3047D2DA0242E00F2431E /* MagicSecurity */;
+		};
+		804213702E4DF735004BA50C /* Exceptions for "Sources" folder in "MagicSecurityContentBlocker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BlockerKit/BlockerConstants.swift,
+				BlockerKit/BlockerRule.swift,
+				BlockerKit/BlockerRulesMapper.swift,
+				"BlockerKit/BlockerRulesMapper+AdultDomains.swift",
+				"BlockerKit/BlockerRulesMapper+GamblingDomains.swift",
+				BlockerKit/FilterOptions.swift,
+			);
+			target = 9EE1931D2DB0069500EAE9AE /* MagicSecurityContentBlocker */;
+		};
+		9EE1932B2DB0069500EAE9AE /* Exceptions for "MagicSecurityContentBlocker" folder in "MagicSecurityContentBlocker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9EE1931D2DB0069500EAE9AE /* MagicSecurityContentBlocker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		804211362E4DF48E004BA50C /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		804211372E4DF491004BA50C /* Sources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8042136E2E4DF712004BA50C /* Exceptions for "Sources" folder in "MagicSecurity" target */,
+				804213702E4DF735004BA50C /* Exceptions for "Sources" folder in "MagicSecurityContentBlocker" target */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9EE1931F2DB0069500EAE9AE /* MagicSecurityContentBlocker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9EE1932B2DB0069500EAE9AE /* Exceptions for "MagicSecurityContentBlocker" folder in "MagicSecurityContentBlocker" target */,
+			);
+			path = MagicSecurityContentBlocker;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EB3047B2DA0242E00F2431E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809FC0DF2E4DFA1100C29952 /* GoogleMobileAds in Frameworks */,
+				809FC0E72E4DFAAF00C29952 /* AppsFlyerLib in Frameworks */,
+				809FC0E42E4DFA9E00C29952 /* ApphudSDK in Frameworks */,
+				804213782E4DF803004BA50C /* ComposableArchitecture in Frameworks */,
+				8042124F2E4DF524004BA50C /* FirebaseAnalyticsCore in Frameworks */,
+				804212532E4DF524004BA50C /* FirebaseCrashlytics in Frameworks */,
+				8042124D2E4DF524004BA50C /* FirebaseAnalytics in Frameworks */,
+				804212512E4DF524004BA50C /* FirebaseCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE1931B2DB0069500EAE9AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EB304752DA0242E00F2431E = {
+			isa = PBXGroup;
+			children = (
+				9EEB11542DE9856E0098036B /* Subscriptions.storekit */,
+				9ED13F7E2DA02FEE00996699 /* App */,
+				9EE1931F2DB0069500EAE9AE /* MagicSecurityContentBlocker */,
+				9EB304A92DA026EE00F2431E /* Frameworks */,
+				9EB3047F2DA0242E00F2431E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EB3047F2DA0242E00F2431E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3047E2DA0242E00F2431E /* MagicSecurity.app */,
+				9EE1931E2DB0069500EAE9AE /* MagicSecurityContentBlocker.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EB304A92DA026EE00F2431E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ED13F7E2DA02FEE00996699 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				804211372E4DF491004BA50C /* Sources */,
+				804211362E4DF48E004BA50C /* Resources */,
+				9ED13F7D2DA02FEE00996699 /* MagicSecurityApp.swift */,
+				809FC32E2E4E063700C29952 /* MagicSecurity.entitlements */,
+				809FC4512E4E07E900C29952 /* info.plist */,
+				9E9E5B022DAB9A17005A7595 /* AppDelegate.swift */,
+				9E5220562DC108E6000D8298 /* alarm.mp3 */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EB3047D2DA0242E00F2431E /* MagicSecurity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB3048B2DA0242F00F2431E /* Build configuration list for PBXNativeTarget "MagicSecurity" */;
+			buildPhases = (
+				9EB3047A2DA0242E00F2431E /* Sources */,
+				9EB3047B2DA0242E00F2431E /* Frameworks */,
+				9EB3047C2DA0242E00F2431E /* Resources */,
+				9EE193282DB0069500EAE9AE /* Embed Foundation Extensions */,
+				9EEF9F112DEF00D00003C5A9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EE193262DB0069500EAE9AE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				804211362E4DF48E004BA50C /* Resources */,
+				804211372E4DF491004BA50C /* Sources */,
+			);
+			name = MagicSecurity;
+			packageProductDependencies = (
+				8042124C2E4DF524004BA50C /* FirebaseAnalytics */,
+				8042124E2E4DF524004BA50C /* FirebaseAnalyticsCore */,
+				804212502E4DF524004BA50C /* FirebaseCore */,
+				804212522E4DF524004BA50C /* FirebaseCrashlytics */,
+				804213772E4DF803004BA50C /* ComposableArchitecture */,
+				809FC0DE2E4DFA1100C29952 /* GoogleMobileAds */,
+				809FC0E32E4DFA9E00C29952 /* ApphudSDK */,
+				809FC0E62E4DFAAF00C29952 /* AppsFlyerLib */,
+			);
+			productName = MagicSecurity;
+			productReference = 9EB3047E2DA0242E00F2431E /* MagicSecurity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EE1931D2DB0069500EAE9AE /* MagicSecurityContentBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EE1932C2DB0069500EAE9AE /* Build configuration list for PBXNativeTarget "MagicSecurityContentBlocker" */;
+			buildPhases = (
+				9EE1931A2DB0069500EAE9AE /* Sources */,
+				9EE1931B2DB0069500EAE9AE /* Frameworks */,
+				9EE1931C2DB0069500EAE9AE /* Resources */,
+				9E65CB7A2DBA85F400675F01 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9EE1931F2DB0069500EAE9AE /* MagicSecurityContentBlocker */,
+			);
+			name = MagicSecurityContentBlocker;
+			packageProductDependencies = (
+			);
+			productName = MagicSecurityContentBlocker;
+			productReference = 9EE1931E2DB0069500EAE9AE /* MagicSecurityContentBlocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EB304762DA0242E00F2431E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					9EB3047D2DA0242E00F2431E = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					9EE1931D2DB0069500EAE9AE = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 9EB304792DA0242E00F2431E /* Build configuration list for PBXProject "MagicSecurity" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EB304752DA0242E00F2431E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8042124B2E4DF524004BA50C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				804213762E4DF803004BA50C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				809FC0DD2E4DFA1100C29952 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				809FC0E22E4DFA9E00C29952 /* XCRemoteSwiftPackageReference "ApphudSDK" */,
+				809FC0E52E4DFAAF00C29952 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9EB3047F2DA0242E00F2431E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EB3047D2DA0242E00F2431E /* MagicSecurity */,
+				9EE1931D2DB0069500EAE9AE /* MagicSecurityContentBlocker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EB3047C2DA0242E00F2431E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E5220572DC108E6000D8298 /* alarm.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE1931C2DB0069500EAE9AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEB11552DE9856E0098036B /* Subscriptions.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9EEF9F112DEF00D00003C5A9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# \"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EB3047A2DA0242E00F2431E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9E5B032DAB9A1B005A7595 /* AppDelegate.swift in Sources */,
+				9ED13F802DA02FEE00996699 /* MagicSecurityApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE1931A2DB0069500EAE9AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EE193262DB0069500EAE9AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EE1931D2DB0069500EAE9AE /* MagicSecurityContentBlocker */;
+			targetProxy = 9EE193252DB0069500EAE9AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9EB304892DA0242F00F2431E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9EB3048A2DA0242F00F2431E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EB3048C2DA0242F00F2431E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/MagicSecurity.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your data will be used to deliver personalized ads to you";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testapp.magic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EB3048D2DA0242F00F2431E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/MagicSecurity.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your data will be used to deliver personalized ads to you";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testapp.magic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9EE193292DB0069500EAE9AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = MagicSecurityContentBlocker/MagicSecurityContentBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagicSecurityContentBlocker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MagicSecurityContentBlocker;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testapp.magic.safari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EE1932A2DB0069500EAE9AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = MagicSecurityContentBlocker/MagicSecurityContentBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagicSecurityContentBlocker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MagicSecurityContentBlocker;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testapp.magic.safari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EB304792DA0242E00F2431E /* Build configuration list for PBXProject "MagicSecurity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB304892DA0242F00F2431E /* Debug */,
+				9EB3048A2DA0242F00F2431E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EB3048B2DA0242F00F2431E /* Build configuration list for PBXNativeTarget "MagicSecurity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB3048C2DA0242F00F2431E /* Debug */,
+				9EB3048D2DA0242F00F2431E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EE1932C2DB0069500EAE9AE /* Build configuration list for PBXNativeTarget "MagicSecurityContentBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EE193292DB0069500EAE9AE /* Debug */,
+				9EE1932A2DB0069500EAE9AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8042124B2E4DF524004BA50C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.0;
+			};
+		};
+		804213762E4DF803004BA50C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.21.1;
+			};
+		};
+		809FC0DD2E4DFA1100C29952 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.9.0;
+			};
+		};
+		809FC0E22E4DFA9E00C29952 /* XCRemoteSwiftPackageReference "ApphudSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apphud/ApphudSDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.6.2;
+			};
+		};
+		809FC0E52E4DFAAF00C29952 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8042124C2E4DF524004BA50C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8042124B2E4DF524004BA50C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8042124E2E4DF524004BA50C /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8042124B2E4DF524004BA50C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		804212502E4DF524004BA50C /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8042124B2E4DF524004BA50C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		804212522E4DF524004BA50C /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8042124B2E4DF524004BA50C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		804213772E4DF803004BA50C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 804213762E4DF803004BA50C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		809FC0DE2E4DFA1100C29952 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 809FC0DD2E4DFA1100C29952 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+		809FC0E32E4DFA9E00C29952 /* ApphudSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 809FC0E22E4DFA9E00C29952 /* XCRemoteSwiftPackageReference "ApphudSDK" */;
+			productName = ApphudSDK;
+		};
+		809FC0E62E4DFAAF00C29952 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 809FC0E52E4DFAAF00C29952 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9EB304762DA0242E00F2431E /* Project object */;
+}
