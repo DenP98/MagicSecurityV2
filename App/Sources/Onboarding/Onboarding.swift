@@ -86,17 +86,17 @@ extension Onboarding.State.Step {
     
     public var title: String {
         switch self {
-        case .stepMobileSecurity: "Mobile Security"
-        case .stepWebAnonymity: "Web Anonymity"
-        case .stepDataProtection: "Data Protection"
+        case .stepMobileSecurity: String(localized: "Mobile Security")
+        case .stepWebAnonymity: String(localized: "Web Anonymity")
+        case .stepDataProtection: String(localized: "Data Protection")
         }
     }
     
     public var description: String {
         switch self {
-        case .stepMobileSecurity: "Activate our Magic Security to block unwanted advertising, online tracking and potentially malicious scripts."
-        case .stepWebAnonymity: "Use our secure browser to surf the Internet anonymously, hide your search history from prying eyes."
-        case .stepDataProtection: "Protect private information such as personal notes and passwords from unwanted use by unauthorized people"
+        case .stepMobileSecurity: String(localized: "Activate our Magic Security to block unwanted advertising, online tracking and potentially malicious scripts")
+        case .stepWebAnonymity: String(localized: "Use our secure browser to surf the Internet anonymously, hide your search history from prying eyes")
+        case .stepDataProtection: String(localized: "Protect private information such as personal notes and passwords from unwanted use by unauthorized people")
         }
     }
     

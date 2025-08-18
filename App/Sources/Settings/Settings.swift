@@ -89,7 +89,16 @@ public struct Settings: Sendable {
                 state.isPremium = userDefaults.hasActiveSubscription
                 return .none
                 
-            case .destination, .restoreTapped:
+            case .restoreTapped:
+                return .run { _ in
+                    do {
+                        try await storeKitClient.restore()
+                    } catch {
+                        
+                    }
+                }
+                
+            case .destination:
                 return .none
             }
         }

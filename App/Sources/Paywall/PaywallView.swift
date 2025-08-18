@@ -31,6 +31,8 @@ public struct PaywallView: View {
                         .foregroundStyle(.designSystem(.textPrimary))
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 450)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.85)
                     
                     Spacer(minLength: 12)
                     
@@ -39,6 +41,8 @@ public struct PaywallView: View {
                         .foregroundStyle(.designSystem(.textPrimary))
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 450)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.85)
                     
                     Spacer(minLength: 20)
                     
@@ -73,8 +77,9 @@ public struct PaywallView: View {
                             Text(store.isFreeTrialEnabled ? "free_trial_enabled".localized : "free_trial_disabled".localized)
                                 .fontSystem(iPhoneSize: 17, iPadSize: 22, weight: .bold)
                                 .foregroundStyle(.designSystem(.textSecondary))
-                            
-                            Spacer()
+                                .lineLimit(1)
+                                .layoutPriority(1)
+                                .minimumScaleFactor(0.8)
                             
                             Toggle("", isOn: Binding(
                                 get: { store.isFreeTrialEnabled },
@@ -126,6 +131,7 @@ public struct PaywallView: View {
                     }
                     .fontSystem(iPhoneSize: 13, iPadSize: 16)
                     .foregroundStyle(.designSystem(.textDescription))
+                    .offset(y: UIDevice.isSE ? 0 : 10)
                     
                     Spacer(minLength: 18)
                 }
