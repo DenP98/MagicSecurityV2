@@ -106,9 +106,9 @@ public struct Paywall: Sendable {
             #warning("Update with actual product identifiers")
             switch self {
             case .weekly:
-                return "com.apprix.magicsecurity.weekly"
+                return ""
             case .yearly:
-                return "com.apprix.magicsecurity.yearly"
+                return ""
             }
         }
     }
@@ -277,11 +277,11 @@ public struct Paywall: Sendable {
                 }
                 
             case .privacyPolicyTapped:
-                state.safari = Safari.State(url: URL(string: "https://example.com/privacy")!)
+                state.safari = Safari.State(url: URL(string: URLKeys.privacyPolicyLink)!)
                 return .none
                 
             case .termsOfUseTapped:
-                state.safari = Safari.State(url: URL(string: "https://example.com/terms")!)
+                state.safari = Safari.State(url: URL(string: URLKeys.termsOfUseLink)!)
                 return .none
                 
             case .adLoadingStarted:

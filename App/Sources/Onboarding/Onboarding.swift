@@ -86,7 +86,7 @@ extension Onboarding.State.Step {
     
     public var title: String {
         switch self {
-        case .stepMobileSecurity: String(localized: "Mobile Security")
+        case .stepMobileSecurity: String(localized: "Online Security")
         case .stepWebAnonymity: String(localized: "Web Anonymity")
         case .stepDataProtection: String(localized: "Data Protection")
         }
@@ -94,9 +94,9 @@ extension Onboarding.State.Step {
     
     public var description: String {
         switch self {
-        case .stepMobileSecurity: String(localized: "Activate our Magic Security to block unwanted advertising, online tracking and potentially malicious scripts")
-        case .stepWebAnonymity: String(localized: "Use our secure browser to surf the Internet anonymously, hide your search history from prying eyes")
-        case .stepDataProtection: String(localized: "Protect private information such as personal notes and passwords from unwanted use by unauthorized people")
+        case .stepMobileSecurity: String(localized: "Block ads and trackers for a smoother and safer online experience")
+        case .stepWebAnonymity: String(localized: "Browse privately and keep your online activity hidden from others")
+        case .stepDataProtection: String(localized: "Lock your secret notes and secure browser with a password only you can access")
         }
     }
     

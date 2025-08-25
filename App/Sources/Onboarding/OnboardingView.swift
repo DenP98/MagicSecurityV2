@@ -37,6 +37,7 @@ public struct OnboardingView: View {
                         Text(store.currentStep.title)
                             .fontSystem(iPhoneSize: 28, iPadSize: 48, weight: .bold)
                             .foregroundColor(.designSystem(.textSecondary))
+                            .multilineTextAlignment(.center)
                         
                         Text(store.currentStep.description)
                             .fontSystem(iPhoneSize: 17, iPadSize: 20)
@@ -72,13 +73,13 @@ public struct OnboardingView: View {
                                 .foregroundColor(.designSystem(.textDescription))
                                 .fontSystem(iPhoneSize: 13, iPadSize: 16)
                                 .multilineTextAlignment(.center)
-                                .frame(height: 40)
+                                .frame(height: UIDevice.isPad ? 80 : 40)
                         } else {
                             
                             RoundedButton(buttonText: "continue".localized) {
                                 store.send(.continueButtonTapped)
                             }
-                            .padding(.bottom, 48)
+                            .padding(.bottom, UIDevice.isPad ? 88 : 48)
                         }
                     }
                     .animation(.default, value: store.currentStep)

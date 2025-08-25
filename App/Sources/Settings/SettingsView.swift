@@ -41,13 +41,6 @@ public struct SettingsView: View {
                         }
                     }
                     
-                    MenuRowView(title: "rate_us".localized,
-                                image: Image("rate_us"),
-                                isCompact: true,
-                                action: {
-                        store.send(.rateUsTapped)
-                    })
-                    
                     MenuRowView(title: "share".localized,
                                 image: Image("share"),
                                 isCompact: true,

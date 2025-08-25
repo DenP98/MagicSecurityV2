@@ -61,33 +61,32 @@ public struct AppDelegateReducer: Sendable {
                         application.shortcutItems = [supportAction]
                     },
                     .run { [adMobClient, appsFlyerHelper = state.appsFlyerHelper] _ in
-                        await adMobClient.initialize()
-                        
+                        // INITIALIZE FIREBASE
+                        FirebaseApp.configure()
+                        // INITIALIZE APPHUD
                         await Apphud.start(
                             apiKey: APIKeys.apphudKey,
                             userID: nil,
                             observerMode: true
                         )
-                        
+                        // INITIALIZE APPSFLYER
                         AppsFlyerLib.shared().appsFlyerDevKey = APIKeys.appsFlyerDevKey
                         AppsFlyerLib.shared().appleAppID = APIKeys.appsFlyerAppID
-                        AppsFlyerLib.shared().waitForATTUserAuthorization(timeoutInterval: 20)
-                        
+                        AppsFlyerLib.shared().delegate = appsFlyerHelper
+                        AppsFlyerLib.shared().waitForATTUserAuthorization(timeoutInterval: 10)
                         NotificationCenter.default.addObserver(
                             appsFlyerHelper,
                             selector: #selector(AppsFlyerHelper.sendLaunch),
                             name: UIApplication.didBecomeActiveNotification,
                             object: nil
                         )
-                        
-                        AppsFlyerLib.shared().delegate = appsFlyerHelper
-                        
-                        #warning("Add Google plist file first")
-//                        FirebaseApp.configure()
-//                        await Analytics.setUserID(Apphud.userID())
-//                        if let instanceID = Analytics.appInstanceID() {
-//                            Apphud.setAttribution(data: nil, from: .firebase, identifer: instanceID, callback: nil)
-//                        }
+                        // LINK ANALYTICS
+                        await Analytics.setUserID(Apphud.userID())
+                        if let instanceID = Analytics.appInstanceID() {
+                            Apphud.setAttribution(data: nil, from: .firebase, identifer: instanceID, callback: nil)
+                        }
+                        // INITIALIZE ADMOB
+                        await adMobClient.initialize()
                     }
                 )
                 
@@ -115,10 +114,11 @@ public struct AppDelegateReducer: Sendable {
                 }
                 
                 return .run { _ in
+                    #warning("change address")
                     await mailClient.presentMailComposer(
                         "support@magicsecurity.app",
-                        "MagicSecurity Support",
-                        "Hi MagicSecurity team,\n\n"
+                        "Magic Security Bug Report",
+                        "Hi Magic Security team,\n\n"
                     )
                 }
             }

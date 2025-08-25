@@ -63,8 +63,8 @@ public struct AppReducer: Sendable {
                     }
                     return .run { _ in
                         try await notificationClient.scheduleDelayedNotification(
-                            "Don't forget about us!",
-                            "Open MagicSecurity to continue",
+                            String(localized: "exit_notification_title"),
+                            String(localized: "exit_notification_subtitle"),
                             3.0
                         )
                         await userDefaults.setHasScheduledFirstCloseNotification()
@@ -91,12 +91,11 @@ public struct AppReducer: Sendable {
                     guard !self.userDefaults.hasActiveSubscription else {
                         return
                     }
-                    #warning("setup exact time")
                     try await self.notificationClient.scheduleDailyNotification(
-                        "Your security matters!",
-                        "Open MagicSecurity to stay protected online",
-                        20,
-                        11
+                        String(localized: "daily_notification_title"),
+                        String(localized: "daily_notification_subtitle"),
+                        19,
+                        20
                     )
                 }
                 

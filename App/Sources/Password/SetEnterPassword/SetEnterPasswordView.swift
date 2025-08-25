@@ -55,14 +55,14 @@ public struct SetEnterPasswordView: View {
                                 EmptyView()
                                 
                             case .setNew, .confirmNew:
-                                RoundedButton(buttonText: "Continue".localized) {
+                                RoundedButton(buttonText: "continue".localized) {
                                     store.send(.continueTapped)
                                 }
                                 
                                 Button {
                                     store.send(.skipPasswordTapped)
                                 } label: {
-                                    Text("skip".uppercased().localized)
+                                    Text("skip".localized.uppercased())
                                         .font(.system(size: 17, weight: .bold))
                                         .foregroundColor(.designSystem(.primary))
                                 }

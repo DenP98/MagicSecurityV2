@@ -32,7 +32,6 @@ public struct Settings: Sendable {
         case onAppear
         case destination(PresentationAction<Destination.Action>)
         case premiumTapped
-        case rateUsTapped
         case shareTapped
         case restoreTapped
         case privacyPolicyTapped
@@ -55,14 +54,9 @@ public struct Settings: Sendable {
                 state.destination = .paywall(Paywall.State())
                 return .none
                 
-            case .rateUsTapped:
-                return .run { _ in
-                    await storeKitClient.requestReview()
-                }
-                
             case .shareTapped:
                 let text = "Check out Magic Security!"
-                guard let url = URL(string: "https://apps.apple.com/app/idYOUR_APP_ID") else {
+                guard let url = URL(string: URLKeys.shareLink) else {
                     assertionFailure("Link is broken")
                     return .none
                 }
@@ -70,7 +64,7 @@ public struct Settings: Sendable {
                 return .none
                 
             case .privacyPolicyTapped:
-                guard let link = URL(string: "privacy_policy_link".localized) else {
+                guard let link = URL(string: URLKeys.privacyPolicyLink) else {
                     assertionFailure("Link is broken")
                     return .none
                 }
@@ -78,7 +72,7 @@ public struct Settings: Sendable {
                 return .none
                 
             case .termsOfUseTapped:
-                guard let link = URL(string: "terms_of_use_link".localized) else {
+                guard let link = URL(string: URLKeys.termsOfUseLink) else {
                     assertionFailure("Link is broken")
                     return .none
                 }

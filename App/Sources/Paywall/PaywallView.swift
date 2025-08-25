@@ -58,7 +58,7 @@ public struct PaywallView: View {
                     VStack(spacing: 12) {
                         subscriptionOptionView(
                             title: "free_trial_for_days".localized,
-                            price: "\(store.weeklyPrice) / \("week".localized)",
+                            price: "then_title".localized + " " + "\(store.weeklyPrice) / \("week".localized)",
                             isSelected: store.selectedPlan == .weekly
                         ) {
                             store.send(.selectPlan(.weekly))
@@ -75,7 +75,7 @@ public struct PaywallView: View {
                         
                         HStack {
                             Text(store.isFreeTrialEnabled ? "free_trial_enabled".localized : "free_trial_disabled".localized)
-                                .fontSystem(iPhoneSize: 17, iPadSize: 22, weight: .bold)
+                                .fontSystem(iPhoneSize: 16, iPadSize: 21)
                                 .foregroundStyle(.designSystem(.textSecondary))
                                 .lineLimit(1)
                                 .layoutPriority(1)
@@ -157,10 +157,10 @@ public struct PaywallView: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text(title)
-                        .fontSystem(iPhoneSize: 17, iPadSize: 22, weight: .bold)
+                        .fontSystem(iPhoneSize: 16, iPadSize: 21)
                         .foregroundStyle(.designSystem(.textSecondary))
                     Text(price)
-                        .fontSystem(iPhoneSize: 15, iPadSize: 20)
+                        .fontSystem(iPhoneSize: 14, iPadSize: 19)
                         .foregroundStyle(.designSystem(.textDescription))
                 }
                 Spacer()

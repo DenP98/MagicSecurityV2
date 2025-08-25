@@ -7,6 +7,7 @@
 
 import SwiftUI
 import ComposableArchitecture
+import AVKit
 
 /*
  TODO:
@@ -49,17 +50,12 @@ public struct TutorialView: View {
             }
             .padding(.horizontal)
             
-            ZStack {
-                RoundedRectangle(cornerRadius: 12)
-                    .fill(Color.gray.opacity(0.1))
-                    .frame(height: 200)
-                
-                // Here we'll add GIF later
-                Image(systemName: "play.fill")
-                    .foregroundColor(.blue)
-                    .font(.system(size: 30))
-            }
-            .padding(.horizontal, 24)
+            VideoPlayerView(
+                url: Bundle.main.url(forResource: "tutor_video", withExtension: "mp4")!,
+                contentMode: .resizeAspect
+            )
+            .frame(width: 280, height: videoLayerHeight)
+            .clipped()
             
             RoundedButton(buttonText: "open_settings".localized) {
                 store.send(.openSettingsTapped)
@@ -77,6 +73,61 @@ public struct TutorialView: View {
                 }
             }
         }
+    }
+    
+    var videoLayerHeight: CGFloat {
+        if UIDevice.isSE || UIDevice.isPad {
+            return 280
+        } else {
+            return 380
+        }
+    }
+}
+
+struct VideoPlayerView: UIViewRepresentable {
+    let url: URL
+    let contentMode: AVLayerVideoGravity
+    
+    func makeUIView(context: Context) -> UIView {
+        return PlayerUIView(url: url, gravity: contentMode)
+    }
+    
+    func updateUIView(_ uiView: UIView, context: Context) {}
+}
+
+class PlayerUIView: UIView {
+    private let playerLayer = AVPlayerLayer()
+    private let player: AVPlayer
+    
+    init(url: URL, gravity: AVLayerVideoGravity) {
+        self.player = AVPlayer(url: url)
+        super.init(frame: .zero)
+        
+        playerLayer.player = player
+        playerLayer.videoGravity = gravity
+        layer.addSublayer(playerLayer)
+        
+        player.play()
+        player.isMuted = true
+        player.actionAtItemEnd = .none
+        
+        NotificationCenter.default.addObserver(
+            forName: .AVPlayerItemDidPlayToEndTime,
+            object: player.currentItem,
+            queue: .main
+        ) { [weak player] _ in
+            player?.seek(to: .zero)
+            player?.play()
+        }
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        playerLayer.frame = bounds
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 

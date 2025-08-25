@@ -43,6 +43,12 @@
             "value" : "%lld"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -72,6 +78,12 @@
     "%lld%%" : {
       "localizations" : {
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%%"
+          }
+        },
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld%%"
@@ -111,6 +123,12 @@
             "value" : "0"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "0"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -133,40 +151,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "0"
-          }
-        }
-      }
-    },
-    "Activate our Magic Security to block unwanted advertising, online tracking and potentially malicious scripts" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aktivieren Sie unsere Magic Security, um unerwünschte Werbung, Online-Tracking und potenziell schädliche Skripte zu blockieren"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activa nuestro Magic Security para bloquear publicidad no deseada, seguimiento en línea y scripts potencialmente maliciosos"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Activez notre Magic Security pour bloquer les publicités indésirables, le suivi en ligne et les scripts potentiellement malveillants"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "当社のMagic Securityを有効化して、不要な広告、オンライン追跡、および潜在的に悪意のあるスクリプトをブロックします。"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ative o nosso Magic Security para bloquear publicidade indesejada, rastreamento online e scripts potencialmente maliciosos"
           }
         }
       }
@@ -218,37 +202,37 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aktivieren Sie das Ständchen mit einer Bewegung"
+            "value" : "Alarm auslösen, wenn das Gerät bewegt wird"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Activate the serenader with a movement"
+            "value" : "Trigger an alarm when the device is moved"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Activar el serenatero con un movimiento"
+            "value" : "Activar una alarma cuando se mueve el dispositivo"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Activer le sérénadeur par un mouvement"
+            "value" : "Déclencher une alarme lorsque l'appareil est déplacé"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ムーブメントでセレナーデを活性化"
+            "value" : "デバイスが移動された際にアラームを鳴らす"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ativar a serenata com um movimento"
+            "value" : "Acionar um alarme quando o dispositivo for movido"
           }
         }
       }
@@ -552,7 +536,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "MagicSecurity"
+            "value" : "Magic Security"
           }
         },
         "es" : {
@@ -618,6 +602,46 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lista negra"
+          }
+        }
+      }
+    },
+    "Block ads and trackers for a smoother and safer online experience" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blockieren Sie Werbung und Tracker für ein flüssigeres und sichereres Online-Erlebnis"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Block ads and trackers for a smoother and safer online experience"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloquea anuncios y rastreadores para disfrutar de una experiencia online más fluida y segura"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloquez les publicités et les traceurs pour une expérience en ligne plus fluide et plus sûre"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "広告とトラッカーをブロックして、よりスムーズで安全なオンライン体験を実現します"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloqueie anúncios e rastreadores para uma experiência online mais suave e segura"
           }
         }
       }
@@ -909,6 +933,46 @@
         }
       }
     },
+    "Browse privately and keep your online activity hidden from others" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Surfen Sie privat und halten Sie Ihre Online-Aktivitäten vor anderen geheim"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Browse privately and keep your online activity hidden from others"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navega de forma privada y mantén tu actividad en línea oculta a los demás"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Naviguez en toute confidentialité et cachez votre activité en ligne aux autres"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プライベートにブラウジングし、オンラインでの活動を他人に隠す"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navegue em privado e mantenha a sua atividade online oculta dos outros"
+          }
+        }
+      }
+    },
     "browser" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1122,6 +1186,12 @@
             "value" : "Klar"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1236,37 +1306,37 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kontakt zum Support"
+            "value" : "Problem melden"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Contact Support"
+            "value" : "Report an Issue"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Contacto"
+            "value" : "Informar de un problema"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Support de contact"
+            "value" : "Signaler un problème"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "サポート"
+            "value" : "問題を報告する"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apoio ao contacto"
+            "value" : "Relatar um problema"
           }
         }
       }
@@ -1320,6 +1390,12 @@
             "value" : "Personalisierung"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Customization"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1354,6 +1430,12 @@
             "value" : "Passen Sie Adblock-Filter an Ihre Bedürfnisse an"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Customize Adblock filters to suit your needs"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1380,12 +1462,98 @@
         }
       }
     },
+    "daily_notification_subtitle" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnen Sie die App, um den Webschutz zu aktivieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open app to activate web protection"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre la aplicación para activar la protección web"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrez l'application pour activer la protection Web."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリを開いてウェブ保護を有効にします"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abra a aplicação para ativar a proteção da Web"
+          }
+        }
+      }
+    },
+    "daily_notification_title" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sicherheit mit einem Fingertipp"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One Tap Security"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seguridad con un solo toque"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sécurité en un clic"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ワンタップセキュリティ"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segurança com um toque"
+          }
+        }
+      }
+    },
     "Data Protection" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Datenschutz"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data Protection"
           }
         },
         "es" : {
@@ -1832,6 +2000,12 @@
             "value" : "Fehler beim Laden der Seite"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error Loading Page"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1854,6 +2028,86 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erro ao carregar a página"
+          }
+        }
+      }
+    },
+    "exit_notification_subtitle" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivieren Sie den Schutz, bevor Sie online gehen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn on protection before you go online"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activa la protección antes de conectarte a Internet"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activez la protection avant de vous connecter à Internet"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オンラインに接続する前に、保護機能を有効にしてください"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ative a proteção antes de se conectar à Internet"
+          }
+        }
+      }
+    },
+    "exit_notification_title" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vollständige Sicherheit aktivieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activate Full Security"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar seguridad completa"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer la sécurité complète"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フルセキュリティを有効にする"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ativar segurança total"
           }
         }
       }
@@ -1987,37 +2241,37 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kostenloser Test für 3 Tage"
+            "value" : "3 Tage kostenlose Testversion"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Free trial for 3 days"
+            "value" : "3-Days Free Trial"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prueba gratuita durante 3 días"
+            "value" : "3 días de prueba gratuita"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Essai gratuit pendant 3 jours"
+            "value" : "Essai gratuit de 3 jours"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "3日間無料体験"
+            "value" : "3日間無料トライアル"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Teste gratuito durante 3 dias"
+            "value" : "3 dias de avaliação gratuita"
           }
         }
       }
@@ -2112,6 +2366,12 @@
             "value" : "https://example.com"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://example.com"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2179,36 +2439,42 @@
         }
       }
     },
-    "Mobile Security" : {
+    "Lock your secret notes and secure browser with a password only you can access" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mobile Sicherheit"
+            "value" : "Sichern Sie Ihre geheimen Notizen und Ihren Browser mit einem Passwort, auf das nur Sie Zugriff haben"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lock your secret notes and secure browser with a password only you can access"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Seguridad Móvil"
+            "value" : "Bloquea tus notas secretas y protege tu navegador con una contraseña a la que solo tú puedas acceder"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sécurité Mobile"
+            "value" : "Verrouillez vos notes secrètes et sécurisez votre navigateur à l'aide d'un mot de passe auquel vous seul avez accès"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "モバイルセキュリティ"
+            "value" : "秘密のメモとセキュアなブラウザを、あなただけがアクセスできるパスワードでロックしてください"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Segurança Móvel"
+            "value" : "Bloqueie as suas notas secretas e proteja o navegador com uma palavra-passe que só você pode aceder"
           }
         }
       }
@@ -2332,6 +2598,46 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d notas"
+          }
+        }
+      }
+    },
+    "Online Security" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Online-Sicherheit"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Online Security"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seguridad en línea"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sécurité en ligne"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オンラインセキュリティ"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segurança Online"
           }
         }
       }
@@ -2508,6 +2814,12 @@
             "value" : "Bitte geben Sie eine gültige URL ein"
           }
         },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a valid URL"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2611,7 +2923,7 @@
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prémio"
+            "value" : "Premium"
           }
         }
       }
@@ -2694,40 +3006,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "https://instagram.com/"
-          }
-        }
-      }
-    },
-    "Protect private information such as personal notes and passwords from unwanted use by unauthorized people" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Schützen Sie private Informationen wie persönliche Notizen und Passwörter vor unbefugter Nutzung durch Unbefugte"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Proteja la información privada, como notas personales y contraseñas, del uso no deseado por parte de personas no autorizadas"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Protégez vos informations privées, telles que vos notes personnelles et vos mots de passe, contre toute utilisation non autorisée par des personnes non autorisées"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "個人メモやパスワードなどの個人情報を、不正な人物による不正な使用から保護してください。"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Proteja informações privadas, como notas pessoais e palavras-passe, contra o uso indesejado por pessoas não autorizadas"
           }
         }
       }
@@ -3271,37 +3549,37 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Senden Sie eine E-Mail an unser Support-Team"
+            "value" : "Einen Fehler gefunden? Informieren Sie unser Team"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Send an email to our support team"
+            "value" : "Found a bug? Let our team know"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Envíe un correo electrónico a nuestro equipo de asistencia"
+            "value" : "¿Has encontrado un error? Informa a nuestro equipo"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Envoyez un courriel à notre équipe d'assistance"
+            "value" : "Vous avez trouvé un bug? Informez notre équipe."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "サポートチームにメールを送る"
+            "value" : "バグを発見しましたか？ 私たちのチームまでお知らせください"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enviar uma mensagem de correio eletrónico à nossa equipa de apoio"
+            "value" : "Encontrou um erro? Informe a nossa equipa"
           }
         }
       }
@@ -3470,12 +3748,18 @@
         }
       }
     },
-    "Somethiung went wrong" : {
+    "Something went wrong" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Irgendetwas ist schief gelaufen"
+            "value" : "Es ist ein Fehler aufgetreten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Something went wrong"
           }
         },
         "es" : {
@@ -3487,13 +3771,13 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Quelque chose n'a pas fonctionné"
+            "value" : "Quelque chose s'est mal passé"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "何かが間違っていた"
+            "value" : "何かが間違っています"
           }
         },
         "pt" : {
@@ -3627,43 +3911,84 @@
         }
       }
     },
+    "then_title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dann"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "then"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "entonces"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "alors"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "その後"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "então"
+          }
+        }
+      }
+    },
     "turn_on_the_serenade_not_charging" : {
       "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Schalten Sie die Serenade ein, wenn sie nicht aufgeladen wird"
+            "value" : "Alarm auslösen, wenn das Ladegerät ausgesteckt ist"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Turn on the serenade when it's not charging"
+            "value" : "Sound the alarm if the charger is unplugged"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enciende la serenata cuando no esté cargando"
+            "value" : "Haga sonar la alarma si el cargador está desenchufado"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Allumer la sérénade lorsqu'elle n'est pas en charge"
+            "value" : "Déclenchez l'alarme si le chargeur est débranché"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "充電していないときにセレナーデの電源を入れる"
+            "value" : "充電器が抜かれた場合、アラームを鳴らしてください。"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ligar a serenata quando não está a carregar"
+            "value" : "Alarme se o carregador estiver desconectado"
           }
         }
       }
@@ -3674,37 +3999,37 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Schalten Sie die Sirene ein, wenn der Kopfhörer nicht angeschlossen ist"
+            "value" : "Alarm aktivieren, wenn Kopfhörer abgezogen werden"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Turn on the siren when the earphone is disconnected"
+            "value" : "Activate the alarm when headphones are disconnected"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enciende la sirena cuando se desconecta el auricular"
+            "value" : "Activar la alarma cuando se desconectan los auriculares"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Activation de la sirène lorsque l'écouteur est déconnecté"
+            "value" : "Activer l'alarme lorsque les écouteurs sont déconnectés"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "イヤホンを外すとサイレンを鳴らす"
+            "value" : "ヘッドホンが外された際にアラームを起動する"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ligar a sirene quando o auricular estiver desligado"
+            "value" : "Ativar o alarme quando os auscultadores forem desconectados"
           }
         }
       }
@@ -3753,6 +4078,12 @@
     "URL" : {
       "localizations" : {
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL"
+          }
+        },
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "URL"
@@ -3825,46 +4156,18 @@
         }
       }
     },
-    "Use our secure browser to surf the Internet anonymously, hide your search history from prying eyes" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nutzen Sie unseren sicheren Browser, um anonym im Internet zu surfen und Ihren Suchverlauf vor neugierigen Blicken zu verbergen"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Utiliza nuestro navegador seguro para navegar por Internet de forma anónima y ocultar tu historial de búsqueda de miradas indiscretas"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Utilisez notre navigateur sécurisé pour surfer anonymement sur Internet et masquer votre historique de recherche aux regards indiscrets"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "当社のセキュアブラウザを使用して、インターネットを匿名で閲覧し、検索履歴を第三者の目から隠すことができます"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Use o nosso navegador seguro para navegar na Internet anonimamente, ocultando o seu histórico de pesquisa de olhares curiosos"
-          }
-        }
-      }
-    },
     "Web Anonymity" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Anonymität im Internet"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Web Anonymity"
           }
         },
         "es" : {

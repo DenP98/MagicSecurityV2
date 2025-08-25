@@ -90,7 +90,7 @@ public struct AdBlockView: View {
             ) { store in
                 NavigationStack {
                     TutorialView(store: store)
-                        .presentationDetents([.height(500)])
+                        .presentationDetents([.height(700)])
                 }
             }
             .navigationDestination(

@@ -34,7 +34,7 @@ public struct ActivatePasswordView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("skip".localized.localizedUppercase) {
+                    Button("skip".localized.uppercased()) {
                         store.send(.skipPasswordTapped)
                     }
                 }

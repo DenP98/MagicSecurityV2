@@ -39,7 +39,7 @@ public struct AppView: View {
                     }
                     
                 case .none:
-                    Text("Somethiung went wrong")
+                    Text("Something went wrong")
                 }
             }
         }
